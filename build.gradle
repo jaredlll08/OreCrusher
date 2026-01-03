@@ -31,7 +31,6 @@ tasks.register('updatePluginManifest') {
         manifestJson.Group = project.manifest_group
         manifestJson.Name = project.manifest_name
         manifestJson.Version = version
-        manifestJson.IncludesAssetPack = includes_pack.toBoolean()
         manifestFile.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(manifestJson))
     }
 }
@@ -55,9 +54,7 @@ idea.project.settings.runConfigurations {
         jarPath = file("$hytaleHome/install/$patchline/package/game/latest/Server/HytaleServer.jar").absolutePath
         moduleName = project.idea.module.name + '.main'
         programParameters = "--allow-op --assets=$hytaleHome/install/$patchline/package/game/latest/Assets.zip"
-        if (includes_pack.toBoolean()) {
-            programParameters += " --mods=${file('src/main').absolutePath}"
-        }
+        programParameters += " --mods=${file('src/main').absolutePath}"
         if (load_user_mods.toBoolean()) {
             programParameters += " --mods=$hytaleHome/UserData/Mods"
         }

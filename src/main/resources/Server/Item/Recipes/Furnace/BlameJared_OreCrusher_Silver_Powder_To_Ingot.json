@@ -1,0 +1,17 @@
+{
+  "Input": [
+    {
+      "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Silver"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Bar_Silver"
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Furnace"
+    }
+  ],
+  "TimeSeconds": 7
+}

@@ -1,0 +1,18 @@
+{
+  "Input": [
+    {
+      "ItemId": "Rock_Crystal_Blue_Small"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Crystal_Blue",
+    "Quantity": 2
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlameJared_OreCrusher_Crusher"
+    }
+  ],
+  "TimeSeconds": 5.0
+}

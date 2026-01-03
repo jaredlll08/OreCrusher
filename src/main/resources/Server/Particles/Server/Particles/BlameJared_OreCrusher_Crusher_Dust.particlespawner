@@ -1,0 +1,141 @@
+{
+  "RenderMode": "Erosion",
+  "EmitOffset": {
+    "X": {
+      "Min": 0.1,
+      "Max": 0.3
+    },
+    "Y": {
+      "Min": 0.1,
+      "Max": 0.3
+    },
+    "Z": {
+      "Min": 0.1,
+      "Max": 0.3
+    }
+  },
+  "ParticleRotationInfluence": "Velocity",
+  "LinearFiltering": true,
+  "LightInfluence": 1.0,
+  "ParticleRotateWithSpawner": true,
+  "TrailSpawnerPositionMultiplier": 0.2,
+  "TrailSpawnerRotationMultiplier": 0.2,
+  "MaxConcurrentParticles": 15,
+  "ParticleLifeSpan": {
+    "Min": 0.1,
+    "Max": 0.2
+  },
+  "SpawnRate": {
+    "Min": 40.0,
+    "Max": 40.0
+  },
+  "TotalParticles": {
+    "Min": -1,
+    "Max": -1
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 1,
+      "Max": 2
+    },
+    "Yaw": {
+      "Min": 0,
+      "Max": 360
+    },
+    "Pitch": {
+      "Min": 0,
+      "Max": 180
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Radius": 0,
+      "RadialAcceleration": 0,
+      "RadialTangentAcceleration": 0,
+      "LinearAcceleration": {
+        "X": 0,
+        "Y": 0.0,
+        "Z": 0
+      }
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Shapes/Fragment_GS.png",
+    "FrameSize": {
+      "Width": 32,
+      "Height": 32
+    },
+    "ScaleRatioConstraint": "Preserved",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Z": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 0.0
+      },
+      "70": {
+        "Opacity": 1
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.13
+          }
+        }
+      }
+    },
+    "UVOption": "RandomFlipU",
+    "InitialAnimationFrame": {
+      "Color": "#91816c",
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.4
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -180.0,
+          "Max": 180.0
+        }
+      },
+      "Opacity": 1.0
+    }
+  },
+  "SpawnBurst": true,
+  "UseEmitDirection": false,
+  "IsLowRes": false
+}

@@ -1,0 +1,18 @@
+{
+  "Input": [
+    {
+      "ResourceTypeId": "Rock_Calcite"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Rubble_Calcite",
+    "Quantity": 2
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlameJared_OreCrusher_Crusher"
+    }
+  ],
+  "TimeSeconds": 5.0
+}

@@ -1,0 +1,17 @@
+{
+  "Input": [
+    {
+      "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Cobalt"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Bar_Cobalt"
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Furnace"
+    }
+  ],
+  "TimeSeconds": 7
+}

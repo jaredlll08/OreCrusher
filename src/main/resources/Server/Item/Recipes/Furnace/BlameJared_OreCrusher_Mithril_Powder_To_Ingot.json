@@ -1,0 +1,17 @@
+{
+  "Input": [
+    {
+      "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Mithril"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Bar_Mithril"
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Furnace"
+    }
+  ],
+  "TimeSeconds": 7
+}

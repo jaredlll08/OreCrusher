@@ -1,0 +1,17 @@
+{
+  "Input": [
+    {
+      "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Prisma"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Bar_Prisma"
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Furnace"
+    }
+  ],
+  "TimeSeconds": 7
+}

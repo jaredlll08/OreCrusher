@@ -1,0 +1,17 @@
+{
+  "Input": [
+    {
+      "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Iron"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Bar_Iron"
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Furnace"
+    }
+  ],
+  "TimeSeconds": 7
+}

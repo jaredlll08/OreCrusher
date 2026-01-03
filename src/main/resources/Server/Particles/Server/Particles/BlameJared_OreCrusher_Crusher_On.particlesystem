@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "BlameJared_OreCrusher_Crusher_Dust",
+      "FixedRotation": false
+    }
+  ]
+}

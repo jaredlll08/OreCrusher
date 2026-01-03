@@ -1,0 +1,40 @@
+{
+  "TranslationProperties": {
+    "Name": "items.BlameJared_OreCrusher_Ingredient_Powder_Silver.name",
+    "Description": "items.BlameJared_OreCrusher_Ingredient_Powder_Silver.description"
+  },
+  "Categories": ["Items.Ingredients"],
+  "Model": "Resources/Ingredients/BlameJared_OreCrusher_Powder_Bag.blockymodel",
+  "Texture": "Resources/Ingredients/BlameJared_OreCrusher_Powder_Bag_Silver_Texture.png",
+  "Quality": "Common",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [22.5, 45.0, 22.5],
+    "Translation": [0.6, -9.6]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ore_Silver"
+      }
+    ],
+    "OutputQuantity": 2,
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "BlameJared_OreCrusher_Crusher"
+      }
+    ],
+    "TimeSeconds": 7
+  },
+  "Icon": "Icons/ItemsGenerated/BlameJared_OreCrusher_Ingredient_Powder_Silver.png",
+  "Tags": {
+    "Type": ["Ingredient"]
+  },
+  "MaxStack": 50,
+  "ItemEntity": {
+    "ParticleSystemId": null
+  }
+}

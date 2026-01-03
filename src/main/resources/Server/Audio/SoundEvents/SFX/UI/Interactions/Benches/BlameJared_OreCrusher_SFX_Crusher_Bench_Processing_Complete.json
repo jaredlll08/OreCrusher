@@ -1,0 +1,12 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/UI/Crafting/Crusher_Bench/BlameJared_OreCrusher_Crusher_Bench_Processing_Completed_01.ogg"
+      ]
+    }
+  ],
+  "Volume": -2,
+  "MaxDistance": 15,
+  "StartAttenuationDistance": 1
+}

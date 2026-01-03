@@ -1,0 +1,18 @@
+{
+  "Input": [
+    {
+      "ResourceTypeId": "Rock_Sandstone_Red"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Rubble_Sandstone_Red",
+    "Quantity": 2
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlameJared_OreCrusher_Crusher"
+    }
+  ],
+  "TimeSeconds": 5.0
+}

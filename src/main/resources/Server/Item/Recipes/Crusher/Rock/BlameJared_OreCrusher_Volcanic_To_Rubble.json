@@ -1,0 +1,18 @@
+{
+  "Input": [
+    {
+      "ResourceTypeId": "Rock_Volcanic"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Rubble_Volcanic",
+    "Quantity": 2
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlameJared_OreCrusher_Crusher"
+    }
+  ],
+  "TimeSeconds": 5.0
+}

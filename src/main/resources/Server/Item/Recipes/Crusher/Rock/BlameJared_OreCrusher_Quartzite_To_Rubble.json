@@ -1,0 +1,18 @@
+{
+  "Input": [
+    {
+      "ResourceTypeId": "Rock_Quartzite"
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Rubble_Quartzite",
+    "Quantity": 2
+  },
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlameJared_OreCrusher_Crusher"
+    }
+  ],
+  "TimeSeconds": 5.0
+}

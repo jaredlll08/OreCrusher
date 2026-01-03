@@ -1,0 +1,192 @@
+{
+  "TranslationProperties": {
+    "Name": "items.BlameJared_OreCrusher_Bench_Crusher.name",
+    "Description": "items.BlameJared_OreCrusher_Bench_Crusher.description"
+  },
+  "Icon": "Icons/ItemsGenerated/BlameJared_OreCrusher_Bench_Crusher.png",
+  "Categories": ["Furniture.Benches"],
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 6
+      },
+      {
+        "ResourceTypeId": "Rock",
+        "Quantity": 6
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "BlameJared_OreCrusher_Bench_Crusher",
+        "Metadata": {
+          "BlockState": {
+            "Type": "processingBench",
+            "FuelContainer": {
+              "Capacity": 2
+            }
+          }
+        }
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": ["Workbench_Crafting"],
+        "Id": "Workbench"
+      }
+    ],
+    "TimeSeconds": 5.0
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Benches/BlameJared_OreCrusher_Crusher.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/BlameJared_OreCrusher_Crusher_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Processing",
+      "Input": [{}, {}],
+      "Fuel": [
+        {
+          "ResourceTypeId": "Fuel",
+          "Icon": "Icons/Processing/FuelSlotIcon.png"
+        },
+        {
+          "ResourceTypeId": "Fuel",
+          "Icon": "Icons/Processing/FuelSlotIcon.png"
+        }
+      ],
+      "LocalOpenSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Open",
+      "LocalCloseSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Close",
+      "CompletedSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Processing_Complete",
+      "EndSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Processing_End",
+      "FailedSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Processing_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "ExtraOutput": {
+        "Outputs": [
+          {
+            "ItemId": "Ingredient_Charcoal"
+          }
+        ],
+        "PerFuelItemsConsumed": 2,
+        "IgnoredFuelSources": [
+          {
+            "ItemId": "Ingredient_Charcoal"
+          }
+        ]
+      },
+      "OutputSlotsCount": 4,
+      "Id": "BlameJared_OreCrusher_Crusher",
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Copper",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Iron",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Thorium",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "BlameJared_OreCrusher_Ingredient_Powder_Cobalt",
+                "Quantity": 20
+              }
+            ],
+            "TimeSeconds": 5.0
+          },
+          "CraftingTimeReductionModifier": 0.0
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3,
+          "ExtraInputSlot": 1
+        }
+      ]
+    },
+    "State": {
+      "Id": "processingBench",
+      "Definitions": {
+        "Processing": {
+          "Looping": true,
+          "Particles": [
+            {
+              "SystemId": "BlameJared_OreCrusher_Crusher_On",
+              "TargetNodeName": "Bottom",
+              "Color": "#ffffff",
+              "PositionOffset": {
+                "X": 0.5,
+                "Y": 0.5
+              }
+            },
+            {
+              "SystemId": "BlameJared_OreCrusher_Crusher_On",
+              "TargetNodeName": "Bottom",
+              "Color": "#ffffff",
+              "PositionOffset": {
+                "Y": 0.5
+              }
+            },
+            {
+              "SystemId": "BlameJared_OreCrusher_Crusher_On",
+              "TargetNodeName": "Bottom",
+              "Color": "#ffffff",
+              "PositionOffset": {
+                "X": -0.5,
+                "Y": 0.5
+              }
+            }
+          ],
+          "AmbientSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Processing",
+          "CustomModelAnimation": "Blocks/Benches/BlameJared_OreCrusher_Crusher_Crushing.blockyanim"
+        },
+        "ProcessCompleted": {
+          "AmbientSoundEventId": "BlameJared_OreCrusher_SFX_Crusher_Bench_Processing",
+          "Looping": true,
+          "CustomModelAnimation": "Blocks/Benches/BlameJared_OreCrusher_Crusher_Crushing.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "HitboxType": "BlameJared_OreCrusher_Bench_Crusher",
+    "BlockParticleSetId": "Stone",
+    "ParticleColor": "#5C583E",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Stone",
+    "Interactions": {
+      "Use": "Open_Processing_Bench"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.365,
+    "Rotation": [22.5, 45.0, 22.5],
+    "Translation": [12.0, -17.4]
+  },
+  "Tags": {
+    "Type": ["Bench"]
+  },
+  "MaxStack": 1
+}

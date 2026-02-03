@@ -52,7 +52,14 @@
     "VariantRotation": "NESW",
     "Bench": {
       "Type": "Processing",
-      "Input": [{}, {}],
+      "Input": [
+        {
+          "FilterValidIngredients": true
+        },
+        {
+          "FilterValidIngredients": true
+        }
+      ],
       "Fuel": [
         {
           "ResourceTypeId": "Fuel",

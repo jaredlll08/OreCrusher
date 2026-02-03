@@ -58,7 +58,8 @@
         },
         {
           "FilterValidIngredients": true
-        },
+        }
+      ],
       "Fuel": [
         {
           "ResourceTypeId": "Fuel",

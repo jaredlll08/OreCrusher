@@ -1,7 +1,7 @@
 {
     "Group": "BlameJared",
     "Name": "OreCrusher",
-    "Version": "1.0.5",
+    "Version": "1.0.6",
     "Description": "Adds a Crusher to crush ores into powder which can be smelted into ingots.",
     "Authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "Website": "https://legacy.curseforge.com/hytale/mods/ore-crusher",
-    "ServerVersion": ">=0.5.0",
+    "ServerVersion": ">=0.6.0",
     "Dependencies": {
         
     },
